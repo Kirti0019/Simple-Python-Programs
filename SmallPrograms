@@ -1,0 +1,118 @@
+#1. Program to print number from 1 to 10 using range 
+for i in range(11):
+    print(i)
+
+
+#2. Program to print table from 1 to 5
+for i in range(1,6):
+    for j in range(1,11):
+        print(i*j,end=" ")
+    print("\n")
+    
+
+#3. Program to print right angle triangle
+for i in range(1,6):
+    print("*"*i)
+    i+=1
+
+#4. Program to print equilateral triangle
+space=4
+for i in range(1,6):
+    print(" "*space,"* "*i)
+    space-=1
+    
+#5. Program to print inverted half pyramid
+ n=5
+ while(n>0):
+     print("*"*n)
+     n-=1
+ or
+for i in range(5):
+    print("*"*(5-i))
+#6. Program to print inverted equilateral triangle
+for i in range(5):
+   print(" "*i,"* "*(5-i))
+
+
+#7. Program to A to Z by their interger value
+for i in range(65,91):
+    print(chr(i))
+    
+    
+#8. Program to accept 5 integer from the user and print their sum
+sum=0
+for i in range(5):
+    num=int(input("Enter an integer: "))
+    sum+=num
+    
+print("Sum=",sum)  
+
+
+#9. Program to display the number in descending order
+for i in range(10,0,-1):
+    print(i)
+
+
+#10. Program to check whether the number is palindrome or not
+ n=int(input("Enter number:"))
+ temp=n
+ rev=0
+ while(n>0):
+     dig=n%10
+     rev=rev*10+dig
+     n=n//10
+ if(temp==rev):
+     print("The number is a palindrome!")
+ else:
+     print("The number isn't a palindrome!")
+ import math
+ print(math.floor(23.9))
+ print(math.ceil(23.1))
+
+
+
+ def add(num1, num2):
+     return num1 + num2
+ 
+ def subtract(num1, num2):
+     return num1 - num2
+ 
+ def multiply(num1, num2):
+     return num1 * num2
+ 
+ def divide(num1, num2):
+     return num1 / num2
+ 
+ print("Please select operation -\n" \
+         "1. Add\n" \
+         "2. Subtract\n" \
+         "3. Multiply\n" \
+         "4. Divide\n")
+
+ 
+ select = int(input("Select operations form 1, 2, 3, 4 :"))
+ 
+ number_1 = int(input("Enter first number: "))
+ number_2 = int(input("Enter second number: "))
+
+ if select == 1:
+     print(number_1, "+", number_2, "=",
+                     add(number_1, number_2))
+ 
+ elif select == 2:
+     print(number_1, "-", number_2, "=",
+                     subtract(number_1, number_2))
+
+ elif select == 3:
+     print(number_1, "*", number_2, "=",
+                     multiply(number_1, number_2))
+ 
+ elif select == 4:
+     print(number_1, "/", number_2, "=",
+                     divide(number_1, number_2))
+ else:
+     print("Invalid input")
+
+print(range(0,10)[4])
+b= range(1,100,3)
+print(b)
